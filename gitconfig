@@ -1,25 +1,29 @@
 # ==============================================================================
-# chen-ye/gitconfig - Modular, Opinionated Git Configuration
-# https://github.com/chen-ye/gitconfig
+# Modular Git Configuration
 # ==============================================================================
-#
-# Import this file in your ~/.gitconfig:
-#
+# Include this file in your ~/.gitconfig:
 #   [include]
 #       path = ~/Projects/gitconfig/gitconfig
-#
-# Or import individual modules selectively:
-#
-#   [include]
-#       path = ~/Projects/gitconfig/git/defaults.inc
-#       path = ~/Projects/gitconfig/git/stacked.inc
-#       path = ~/Projects/gitconfig/git/difftastic.inc
-#       path = ~/Projects/gitconfig/git/hooks.inc
-#
 # ==============================================================================
 
 [include]
+	# Modern Git defaults & hygiene
 	path = git/defaults.inc
+
+	# Editor, difftools, mergetools, and LFS
+	path = git/tools.inc
+
+	# General convenience aliases
+	path = git/aliases.inc
+
+	# GitHub credentials and Git Town
+	path = git/github.inc
+
+	# Stacked diff and branch workflow aliases
 	path = git/stacked.inc
+
+	# Difftastic structural diff aliases
 	path = git/difftastic.inc
+
+	# Git config-based hooks
 	path = git/hooks.inc

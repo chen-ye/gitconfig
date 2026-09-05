@@ -1,0 +1,25 @@
+# ==============================================================================
+# chen-ye/gitconfig - Modular, Opinionated Git Configuration
+# https://github.com/chen-ye/gitconfig
+# ==============================================================================
+#
+# Import this file in your ~/.gitconfig:
+#
+#   [include]
+#       path = ~/Projects/gitconfig/gitconfig
+#
+# Or import individual modules selectively:
+#
+#   [include]
+#       path = ~/Projects/gitconfig/git/defaults.inc
+#       path = ~/Projects/gitconfig/git/stacked.inc
+#       path = ~/Projects/gitconfig/git/difftastic.inc
+#       path = ~/Projects/gitconfig/git/hooks.inc
+#
+# ==============================================================================
+
+[include]
+	path = git/defaults.inc
+	path = git/stacked.inc
+	path = git/difftastic.inc
+	path = git/hooks.inc

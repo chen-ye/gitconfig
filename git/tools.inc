@@ -11,6 +11,9 @@
 	process = git-lfs filter-process
 	required = true
 
+[diff]
+	tool = vscode
+
 [difftool]
 	prompt = false
 

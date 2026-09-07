@@ -60,3 +60,4 @@
 
 [core]
 	untrackedCache = true
+	autocrlf = input
